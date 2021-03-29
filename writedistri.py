@@ -15,10 +15,10 @@ def writedistri_1():
 
 
     # define the pattern to search for (number of iteration doesnt matter):
-    # TODO: it can be over 999 - account for it
     pattern = re.compile(r'(run_it\d{3}_classes.mrcs\s+)(0.\d+)')
 
     # open, read and close .star file:
+    # TODO: account for cases where user chose differnt number of iterations
     starfile = open('run_it025_model.star', 'r')
     text = starfile.read()
     starfile.close()
